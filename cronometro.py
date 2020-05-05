@@ -1,18 +1,15 @@
 import time
-ms=0
-ss=0
-mm=0
-hh=0
+from crea_unidades import crea
+
+instancias = crea()
+instancias.crea_instancias()
 while True:
-    print(hh,":",mm,":",ss,":",ms)
+    print(instancias.hh.valor_actual,":",instancias.mm.valor_actual,":",instancias.ss.valor_actual,":",instancias.ms.valor_actual)
     time.sleep(0.1)
-    ms=ms+1
-    if ms==10:
-        ms=0
-        ss=ss+1
-    if ss==60:
-        ss=0
-        mm=mm+1
-    if mm==60:
-        mm=0
-        hh=hh+1
+    instancias.ms.valor_actual=instancias.ms.valor_actual+1
+    if instancias.ms.maximo_alcanzado()==True:
+        instancias.ss.valor_actual = instancias.ss.valor_actual+1 
+    if instancias.ss.maximo_alcanzado()==True:
+        instancias.mm.valor_actual = instancias.mm.valor_actual+1 
+    if instancias.mm.maximo_alcanzado()==True:
+        instancias.hh.valor_actual = instancias.hh.valor_actual 
