@@ -3,24 +3,18 @@ from crea_unidades import crea as instancias
 
 class cronometro:
 
-    def start():
-        text=''
-        hrs = instancias.hh
-        min = instancias.mm
-        seg = instancias.ss
-        mil = instancias.ms
-        instancias.crea_instancias(instancias)
-        #while hrs.valor_actual <= 23:
-        #time.sleep(0.1)
-        mil.valor_actual=mil.valor_actual+1
-        if mil.maximo_alcanzado()==True:
-            seg.valor_actual = seg.valor_actual+1
-        if seg.maximo_alcanzado()==True:
-            min.valor_actual = min.valor_actual+1
-        if min.maximo_alcanzado()==True:
-            hrs.valor_actual = hrs.valor_actual+1
-        text = '{} : {} : {} : {}'.format(hrs.valor_actual,min.valor_actual,seg.valor_actual,mil.valor_actual)
-        print(text)
+    stop=False 
+    def start(self):    
+        instancias.crea_instancias(instancias)          
+        time.sleep(0.1)
+        instancias.ms.valor_actual=instancias.ms.valor_actual+1
+        if instancias.ms.maximo_alcanzado()==True:
+            instancias.ss.valor_actual = instancias.ss.valor_actual+1 
+        if instancias.ss.maximo_alcanzado()==True:
+            instancias.mm.valor_actual = instancias.mm.valor_actual+1 
+        if instancias.mm.maximo_alcanzado()==True:
+            instancias.hh.valor_actual = instancias.hh.valor_actual+1
+        text = '{} : {} : {} : {}'.format(instancias.hh.valor_actual,instancias.mm.valor_actual,instancias.ss.valor_actual,instancias.ms.valor_actual)
         return text
 
     def restart():

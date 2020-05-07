@@ -1,7 +1,7 @@
-from cronometro import cronometro as cronometro
-
-def main():
-    cronometro.start(cronometro)
+from tkinter import *
+from gui import Interfaz 
 
 if __name__ == "__main__":
-    main()
+    ventana_principal=Tk()
+    interfaz_cronometro=Interfaz(ventana_principal)
+    ventana_principal.mainloop()
