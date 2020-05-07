@@ -3,7 +3,6 @@ from crea_unidades import crea as instancias
 
 class cronometro:
 
-    stop=False 
     def start(self):    
         instancias.crea_instancias(instancias)          
         time.sleep(0.1)
@@ -17,7 +16,7 @@ class cronometro:
         text = '{} : {} : {} : {}'.format(instancias.hh.valor_actual,instancias.mm.valor_actual,instancias.ss.valor_actual,instancias.ms.valor_actual)
         return text
 
-    def restart():
+    def restart(self):
         hrs = instancias.hh
         min = instancias.mm
         seg = instancias.ss
@@ -27,8 +26,9 @@ class cronometro:
         min.valor_actual=0
         hrs.valor_actual=0
 
-    def pause(estado):
+    def pause(self,estado):
         if estado ==True:
             estado = False
         else:
             estado = True
+        return estado
