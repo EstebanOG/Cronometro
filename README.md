@@ -6,7 +6,11 @@ Cronómetro desarrollado en python, con interfaz gráfica.
 
 
 #### Diagrama clases
+<<<<<<< HEAD
 <img src="https://raw.githubusercontent.com/FelipeH22/Cronometro/master/Diagrama/Diagrama-Cronometro-python.jpeg " alt="drawing" width="400"/>
+=======
+<img src="https://raw.githubusercontent.com/FelipeH22/Cronometro/master/Diagrama/Diagrama-Cronometro-python.jpeg " alt="drawing" width="300"/>
+>>>>>>> ee0942c8c8cfce485528c81ccc9494fa3c3cad02
 
 > Diagrama planteado para el desarrollo del cronómetro
 
