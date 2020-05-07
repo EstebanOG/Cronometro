@@ -5,8 +5,8 @@ class crea:
     ss = unidad()
     mm = unidad()
     hh = unidad()
-    def crea_instancias(self):        
-        self.ms.valor_maximo=10        
-        self.ss.valor_maximo=60        
-        self.mm.valor_maximo=60        
+    def crea_instancias(self):
+        self.ms.valor_maximo=10
+        self.ss.valor_maximo=60
+        self.mm.valor_maximo=60
         self.hh.valor_maximo=60
