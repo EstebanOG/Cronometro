@@ -39,14 +39,14 @@ class Interfaz:
             root.update_idletasks ()
 
         boton_inicia = Button(ventana, text = "Iniciar", command=button)
-        boton_inicia.place(x=00, y=160)
-        boton_inicia.config(font=("Verdana",20))
+        boton_inicia.place(x=10, y=160)
+        boton_inicia.config(font=("Verdana",12))
 
         boton_pausa = Button(ventana, text = "Pausar", command=codigo_pausa)
-        boton_pausa.place(x=120, y=160)
-        boton_pausa.config(font=("Verdana",20))
+        boton_pausa.place(x=110, y=160)
+        boton_pausa.config(font=("Verdana",12))
 
         boton_reinicia = Button(ventana, text = "Reiniciar", command=codigo_reiniciar)
-        boton_reinicia.place(x=240, y=160)
-        boton_reinicia.config(font=("Verdana",20))
+        boton_reinicia.place(x=210, y=160)
+        boton_reinicia.config(font=("Verdana",12))
 
