@@ -22,6 +22,7 @@ class Interfaz:
             Thread(target=codigo_inicia).start()
 
         def codigo_inicia():
+            self.stop = False
             while self.stop != True:
                 print(crm.start())
                 label.config(text=crm.start())
