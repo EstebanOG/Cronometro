@@ -10,6 +10,7 @@ Se desarrolla un cronómetro, con las funciones de:
 - Iniciar el conteo
 - Pausar el conteo con posibilidad de retomar desde el último punto.
 - Reiniciar el conteo.
+
 Se encuentra desarrollado en python y hace uso de la librería **Tkinter** para generar la interfaz gráfica de usuario.
 
 #### Ejecutar proyecto
@@ -32,7 +33,10 @@ Se encuentra desarrollado en python y hace uso de la librería **Tkinter** para 
 
 > Diagrama planteado para el desarrollo del cronómetro
 
-Integrantes  | Código
+
+#### Equipo de trabajo
+
+Integrante  | Código
 ------------- | -------------
 Cristhian Mauricio Yara Pardo | 20181020081
 Juan Esteban Olaya García | 20171020135
